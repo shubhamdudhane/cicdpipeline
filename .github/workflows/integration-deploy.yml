@@ -16,6 +16,6 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ftp.sdtecsolutions.com
-          username: ${{ secrets.u679317752.shubham}}
+          username: ${{ secrets.u679317752.cicdintegration}}
           password: ${{ secrets.Shubham@2786 }}
           server-dir: /public_html/integration/
