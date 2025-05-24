@@ -19,4 +19,4 @@ jobs:
           server: ftp.sdtecsolutions.com
           username: ${{ secrets.FTP_STAG_USER }}
           password: ${{ secrets.FTP_STAG_PASS }}
-          server-dir: /public_html/staging/
+          server-dir: /home/u679317752/domains/sdtecsolutions.com/public_html/staging
