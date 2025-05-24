@@ -4,10 +4,11 @@ on:
   push:
     branches:
       - production
-s
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -15,7 +16,7 @@ jobs:
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ftp.sdtecsolutions.production.com
-          username: ${{ secrets.u679317752.cicdproduction }}
-          password: ${{ secrets.Shubham@2786 }}
+          server: ftp.sdtecsolutions.com
+          username: ${{ secrets.FTP_PROD_USER }}
+          password: ${{ secrets.FTP_PROD_PASS }}
           server-dir: /public_html/production/
