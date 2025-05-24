@@ -16,7 +16,7 @@ jobs:
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ftp.sdtecsolutions.com
+          server: staging.sdtecsolutions.com
           username: ${{ secrets.FTP_STAG_USER }}
           password: ${{ secrets.FTP_STAG_PASS }}
           server-dir: /home/u679317752/domains/sdtecsolutions.com/public_html/staging
